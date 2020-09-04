@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles-1er-proy-nodejs",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalaniz0018/guia-hoteles-1er-proy-nodejs.git"
+  },
+  "author": "Karina Alaniz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalaniz0018/guia-hoteles-1er-proy-nodejs/issues"
+  },
+  "homepage": "https://github.com/kalaniz0018/guia-hoteles-1er-proy-nodejs#readme"
+}
