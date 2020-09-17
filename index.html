@@ -8,65 +8,154 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-  <title>Hello, world!</title>
+  <title>Guia Hoteles</title>
 </head>
 
 <body>
-  <h1>Bienvenido!</h1>
 
   <div class="jumbotron">
-    <h1 class="display-3">Hoteles</h1>
+    <h1>Hoteles</h1>
+  </div>
+  <div class="container">
+    <div class="row">
 
-    <div class="container">
-      <div class="row">
+      <div class="col-sm-4">
+        <p>
+        <h3>¿Cómo funciona?</h3>
+        <p>Busca los Hoteles de acuerdo a
+          tus preferencias.</p>
+        </p>
+      </div>
 
-        <div class="col-sm">
-          <h2 class="display-4">Hostel Alta Luna</h2>
-          <p class="lead">Edificio orientado a los entornos naturales de nuestra región</p>
+
+      <div class="col-sm-4">
+        <p>
+        <h3>¿Cómo se reserva?</h3>
+        <p>Elegí el destino de interés y
+          completá con tus datos</p>
+        </p>
+      </div>
+
+      <div class="col-sm-4">
+        <p>
+        <h3>¿Cómo se abona?</h3>
+        <p>Utilizá tu medio de pago
+          de preferencia.</p>
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="d-flex flex-wrap flex-row-reverse">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Luján</h4>
+          <p>Ubicado en el corazón de Luján y que tengas a la cercania todas las atracciones a tu dispocición</p>
         </div>
-
-
-        <div class="col-sm">
-          <h2 class="display-4">Hotel Bellas Artes</h2>
-          <p class="lead">Orientado a la exploración de la imaginación y elevar los sentidos ópticos vigentes</p>
-        </div>
-
-        <div class="col-sm">
-          <h2 class="display-4">Hotel Trust </h2>
-          <p class="lead">Explorá los juegos mas novedosos mientras descansas de una semana dura</p>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
         </div>
       </div>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <h5>Camas</h5>
-          <p class="lead">Evaluá las calidades de las camas de los distintos hoteles</p>
-          <button>Entrar</button>
 
-        </li>
-        <li class="list-group-item">
-          <h5>Comidas</h5>
-          <p class="lead">Enterate de la variabilidad de comidas étnicas de la región elegida</p>
-          <button>Entrar</button>
-        </li>
-        <li class="list-group-item">
-          <h5>Turismo</h5>
-          <p class="lead">Todos los puntos de turismo de tú lugar de preferencia</p>
-          <button>Entrar</button>
-        </li>
-        <li class="list-group-item">
-          <h5>Mascotas</h5>
-          <p class="lead">Aquí tenemos los hoteles para que puedas vacacionar junto a tu mascota</p>
-          <button>Entrar</button>
-        </li>
-        
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Pedigree</h4>
+          <p>Que mejor manera de pasar tus vacaciones que acompañado con tu mascota.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Natural</h4>
+          <p>Explota la naturaleza en su forma agreste sin salir de las comodidades deseadas</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Lima</h4>
+          <p>Ubicado en el centro hostórico</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Argentina</h4>
+          <p>Ubicado en las antiguas calles históricas y revive momento a momento su historia</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Tandil</h4>
+          <p>Ubicado en centro de la ciudad</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Hotel Monte Catro</h4>
+          <p>Ubicado en el centro del barrio porteño</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-entrar">Entrar</button>
+        </div>
+      </div>
+
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="http://www.facebook.com">Facebook</a>
+        <a href="http://www.twitter.com">Twitter</a>
+        <a href="http://www.instragram.com">Instragram</a>
+        <a href="http://www.google.com">Google+</a>
+      </div>
+      
+      <div class="col-sm-4">
+        <address>
+          <h3>Oficina central</h3>
+          <p>Corrientes 3442,CABA, Argentina</p>
+          <p>+541164214773</p>
+          <p>contacto@guiahoteles.com</p>
+        </address>
+      </div>
+
+      <div class="col-sm-4 d-flex flex-column aling-items-end">
+        <a href="http://www.facebook.com">Nosotros</a>
+        <a href="http://www.twitter.com">Precios</a>
+        <a href="http://www.instragram.com">Términos y condiciones</a>
+        <a href="http://www.google.com">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap-->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
