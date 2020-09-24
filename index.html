@@ -41,14 +41,25 @@
         <li class="breadcrumb-item active" aria-current="page">Home</li>
       </ol>
     </nav>
-
-    <div class="row">
-      <img class="img-fluid" src="images/banner.jpg" alt="Responsive image">
-    </div>
+    
     <hr>
-    <div class="row">
 
+    <div class="row">
       <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+      </div>
+        <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo se reserva?</button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#abona" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo se abona?</button>
+      </div>
+      
+    </div>
+   
+  
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="funciona">
         <p>
         <h3>¿Cómo funciona?</h3>
         <p>Busca los Hoteles de acuerdo a
@@ -57,7 +68,7 @@
       </div>
 
 
-      <div class="col-sm-4">
+      <div class="col-sm-4 collapse multi-collapse" id="reserva">
         <p>
         <h3>¿Cómo se reserva?</h3>
         <p>Elegí el destino de interés y
@@ -65,7 +76,7 @@
         </p>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-4 collapse multi-collapse" id="abona">
         <p>
         <h3>¿Cómo se abona?</h3>
         <p>Utilizá tu medio de pago
