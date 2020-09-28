@@ -120,8 +120,8 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Ubicado en el corazón de Luján y que tengas a la cercania todas las atracciones a tu
             dispocición</p>
-          <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"
+            id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-entrar" type="button" data-toggle="popover" data-trigger="hover"
@@ -137,7 +137,7 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Que mejor manera de pasar tus vacaciones que acompañado con tu mascota.</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-entrar" type="button" data-toggle="popover" data-trigger="hover"
@@ -153,7 +153,7 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Explota la naturaleza en su forma agreste sin salir de las comodidades deseadas</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-entrar" type="button" data-toggle="popover" data-trigger="hover"
@@ -169,7 +169,7 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Ubicado en el centro hostórico</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-entrar" type="button" data-toggle="popover" data-trigger="hover"
@@ -185,7 +185,7 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Ubicado en las antiguas calles históricas y revive momento a momento su historia</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-entrar" type="button" data-toggle="popover" data-trigger="hover"
@@ -201,7 +201,7 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Ubicado en centro de la ciudad</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button type="button" class="btn btn-primary btn-entrar" type="button" data-toggle="popover"
@@ -218,7 +218,7 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Ubicado en el centro del barrio porteño</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button class="btn btn-primary btn-entrar" type="button" data-toggle="popover" data-trigger="hover"
@@ -292,7 +292,7 @@
   <!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
@@ -301,8 +301,29 @@
     $(function () {
       $("[data-toggle='tooltip']").tooltip();
       $("[data-toggle='popover']").popover();
-      $('.carousel').carousel({interval: 3000});
+      $('.carousel').carousel({ interval: 3000 });
     });
+
+    $('#contacto').on('show.bs.modal', function (e) {
+      console.log('el modal contacto se esta mostrando');
+
+      $('#contactoBtn').prop('disabled', true);
+      
+    });
+
+    $('#contacto').on('shown.bs.modal', function (e) {
+      console.log('el modal contacto se mostró');
+    });
+
+    $('#contacto').on('hide.bs.modal', function (e) {
+      console.log('el modal contacto se oculta');
+    });
+
+    $('#contacto').on('hidden.bs.modal', function (e) {
+      console.log('el modal contacto se ocultó');
+      $('#contactoBtn').prop('disabled', false);
+    });
+
   </script>
 
 </body>
