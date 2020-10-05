@@ -1,13 +1,13 @@
 /* Mixin permite trabajar con los margenes*/
 .jumbotron {
-  background-color: #fffa19;
+  background-color: #fff000;
   color: black;
   margin-top: 50px;
   margin-bottom: 0px; }
 
 footer {
   padding: 10px 10px 0 10px;
-  background-color: #fffa19;
+  background-color: #fff000;
   margin-top: 10px;
   margin-bottom: 0px; }
 
@@ -25,5 +25,3 @@ footer {
 
 .tab-content {
   padding-top: 10px; }
-
-/*# sourceMappingURL=styles.css.map */
