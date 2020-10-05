@@ -286,26 +286,20 @@
     </div>
   </footer>
 
-
+<!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap-->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- Build:js dist/index.js-->
-
-
-  <!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap-->
+  <!-- Build:js js/main.js-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <!-- endbuild-->
   <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
   <!--Activar el tooltips-->
   <script>
-    $(function () {
-      $("[data-toggle='tooltip']").tooltip();
-      $("[data-toggle='popover']").popover();
-      $('.carousel').carousel({ interval: 3000 });
-    });
 
     $('#contacto').on('show.bs.modal', function (e) {
       console.log('el modal contacto se esta mostrando');
@@ -328,7 +322,7 @@
     });
 
   </script>
-<!-- endbuild-->
+
 </body>
 
 </html>

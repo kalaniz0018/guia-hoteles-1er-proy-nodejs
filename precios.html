@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
+  <!--build:css css/index.css-->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-
+  <!--endbuild-->
   <title>Guia Hoteles</title>
 </head>
 
@@ -255,10 +256,18 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap-->
+    <!--En los siguientes scripts cargamos y configuramos las versiones de bootstrap
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+       <!-- Build:js js/main.js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <!-- endbuild-->
+
+  </body>
 
 </html>
